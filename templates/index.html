@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload & Transkrip Audio</title>
+</head>
+<body>
+  <h2>Upload Audio untuk Transkrip 🎙️</h2>
+  <form action="/transcribe" method="post" enctype="multipart/form-data">
+    <label for="file">Pilih file audio:</label><br><br>
+    <!-- Semua jenis audio diperbolehkan -->
+    <input type="file" id="file" name="file" accept="audio/*" required><br><br>
+    
+    <button type="submit">Upload & Transkrip</button>
+  </form>
+</body>
+</html>
