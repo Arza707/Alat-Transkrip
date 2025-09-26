@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Upload & Transkrip Audio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h2 { color: #333; }
+    button { padding: 8px 16px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background: #45a049; }
+  </style>
 </head>
 <body>
   <h2>Upload Audio untuk Transkrip 🎙️</h2>
   <form action="/transcribe" method="post" enctype="multipart/form-data">
     <label for="file">Pilih file audio:</label><br><br>
-    <!-- Semua jenis audio diperbolehkan -->
     <input type="file" id="file" name="file" accept="audio/*" required><br><br>
-    
     <button type="submit">Upload & Transkrip</button>
   </form>
 </body>
